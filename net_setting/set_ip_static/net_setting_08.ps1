@@ -44,22 +44,21 @@ foreach ($i in $netip){
      }
  }
  #>
-
+ $nic = '本地连接 *'
 "$(Get-Date) : 当前ip地址为 $CIP,DHCP状态为$status" | Out-File .\net_setting.log -NoClobber -Append;
 # 判断DHCP是否为自动获取
 if($status){
     # 判断ip是否已获取，未获取的话重新释放并获取ip
     while($CIP.ToString() -match "169.*"){
-        "$(Get-Date) :网卡 $nic的IP地址未获取成功，正在重新获取IP地址中" | Out-File .\net_setting.log -NoClobber -Append;
+        "$(Get-Date) :网卡 $nic 的IP地址未获取成功，正在重新获取IP地址中" | Out-File .\net_setting.log -NoClobber -Append;
         
-        $release_log = ipconfig /release;
+        $release_log = ipconfig /release $nic;
         Start-Sleep -Seconds 3;
         "$(Get-Date) :release执行完毕  $release_log " | Out-File .\net_setting.log -NoClobber -Append;
-        $renew_log = ipconfig.exe /renew;
+        $renew_log = ipconfig.exe /renew $nic;
         "$(Get-Date) :renew执行完毕 $renew_log " | Out-File .\net_setting.log -NoClobber -Append;
         $net_wmi = Get-WmiObject win32_networkadapterconfiguration -filter "Description = 'Red Hat VirtIO Ethernet Adapter'"
         $CIP = $net_wmi.IPAddress[0]
-        Start-Sleep -Seconds 3;
     }
 
     #ip成功获取后，获取路由设置

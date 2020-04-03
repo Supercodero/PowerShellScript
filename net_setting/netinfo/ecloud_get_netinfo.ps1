@@ -43,33 +43,49 @@ route print -4 | Out-File .\net_setting.log -NoClobber -Append;
 
 
 function detection {
+    if (Test-Connection -Count 1 www.baidu.com -Quiet)
+    {
+        echo "$(Get-Date) connect ok"
+     }else{
+        echo "$(Get-Date) connect to baidu failed"
 
-if (Test-Connection -Count 1 www.baidu.com -Quiet)
-{
-echo "$(Get-Date) connect ok"
-}
-else
-{
-echo "$(Get-Date) connect to baidu failed"
+        echo " "
+        echo "ping 14.215.177.39 : "
+        ping 14.215.177.39
 
-echo " "
-echo "adapter: "
-ipconfig /all
+        echo " "
+        echo "ping 网关： "
+        $net_wmi = Get-WmiObject win32_networkadapterconfiguration -filter "Description = 'Red Hat VirtIO Ethernet Adapter'"
+        ping $net_wmi.DefaultIPGateway[0]
 
-echo " "
-echo "adapter: "
-Get-NetAdapter | Select-Object -Property Name,InterfaceDescription,Status
+        echo " "
+        echo "adapter: "
+        ipconfig /all
 
-echo " "
-echo "dns: "
-Get-DnsClientServerAddress | Select-Object -ExpandProperty ServerAddresses
+        echo " "
+        echo "adapter: "
+        Get-NetAdapter | Select-Object -Property Name,InterfaceDescription,Status
 
-echo " "
-echo "traceroute: "
-tracert www.baidu.com
-}
+        echo " "
+        echo "dns: "
+        Get-DnsClientServerAddress | Select-Object -ExpandProperty ServerAddresses
 
+        echo " "
+        echo "traceroute: "
+        tracert 114.114.114.114
+        }
+    }
+
+
+function log_proc {
+
+$log_path = ".\net_setting.log"
+$log_temp_path = ".\net_setting_temp.log"
+Get-Content $log_path -Tail 5000 | Out-File $log_temp_path
+Remove-Item $log_path
+Rename-Item -Path $log_temp_path -NewName "net_setting.log"
 
 }
 
 detection | Out-File .\net_setting.log -NoClobber -Append;
+log_proc
