@@ -1,0 +1,1631 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="zh" xmlns="http://www.w3.org/1999/xhtml" xmlns:hta="urn:HTMLApplication">
+	<head>
+		<meta name="Generator" content="CAESAR" />
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
+		<title>Canon UFR II 打印机驱动程序 版本 30.02 适用于 Microsoft Windows</title>
+		<hta:application id="id_canon_main_window" applicationname="canon_main_window" border="thick" borderstyle="normal" caption="yes" maximizebutton="yes" minimizebutton="yes" showintaskbar="yes" singleinstance="no" sysmenu="yes" version="1.0" windowstate="normal" contextmenu="yes" navigable="yes" />
+		<style type="text/css">div.list{display:list-item!important;list-style-type:Disc;margin-left:40px!important;padding-left:5px!important;}table div.list{margin-left:20px!important;padding-left:5px!important;}div.dash{display:list-item!important;list-style-type:Circle;margin-left:65px!important;padding-left:5px!important;}table div.dash{margin-left:40px!important;padding-left:5px!important;}div.step_sub{display:list-item!important;list-style-type:Square;margin-left:30px!important;padding-left:5px!important;}div.list_link{display:list-item!important;list-style-type:Square;margin-left:50px!important;padding-left:5px!important;}div.h1{background:#F3F8FA!important;}div.h2,div.h2_2line,div.h2_3line{background:#F3F8FA!important;}div.h3{background:#F3F8FA!important;}thead.table_important td.table_important_col_0,thead.table_note td.table_note_col_0{padding:2px 5px 2px 5px!important;}</style>
+		<style type="text/css" >
+			<!--
+*{
+	font-family:"SimSun","Arial",Sans-serif;
+	/*margin:0;*/
+	/*padding:0;*/
+	/*border:0;*/
+	/*background-color:Transparent;*/
+	font-size:100%;
+	/*font-style:Normal;*/
+	text-decoration:None;
+}
+html{
+	border:0;
+}
+body{
+	margin:0;
+	padding:0;
+	background:#FFFFFF;
+}
+span{
+	color:Inherit;
+}
+div#id_content a{
+	text-decoration:None;
+}
+div#id_content a:link{
+	color:#3366A5;
+	text-decoration:None;
+}
+div#id_content a:visited{
+	color:#3366A5;
+	text-decoration:None;
+}
+div#id_content a:hover{
+	color:#EC6700;
+	background-color:#FFFFCC;
+	text-decoration:Underline;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.chapter_title{
+	background:#4682B4;
+	padding:2px 5px 2px 5px;
+	border-bottom:Solid 1px #4682B4;
+	font-weight:Bold;
+	font-size:80%;
+	margin-bottom:16px;
+	text-align:Right;
+	color:#FFFFFF;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h1{
+	padding:32px 0 2px 8px;
+	border-bottom:Solid 1px #4682B4;
+	background:#F3F8FA;
+	font-weight:Bold;
+	font-size:120%;
+	margin-bottom:16px;
+	vertical-align:Bottom;
+	text-align:Left;
+	color:#000080;
+	position:Relative;
+}
+div.h1 a{
+	position:Absolute;
+	*position:Static!important;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h2,
+div.h2_2line,
+div.h2_3line{
+	border:Solid 1px #4682B4;
+	padding:5px;
+	margin:30px 10px 5px 10px;
+	font-size:90%;
+	font-weight:Bold;
+	background:#F3F8FA;
+	color:#000080;
+}
+div.h2 a,
+div.h2_2line a,
+div.h2_3line a{
+	font-weight:Bold;
+	text-decoration:None;
+	color:#0000FF;
+}
+div.h2 img,
+div.h2_2line img,
+div.h2_3line img{
+	vertical-align:Middle;
+	margin-right:2px;
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h3{
+	padding:5px;
+	margin:25px 10px 5px 10px;
+	font-size:90%;
+	font-weight:Bold;
+	background:#F3F8FA;
+	border-bottom:Solid 1px #87CEEB;
+	color:#000080;
+}
+div.h3 a{
+	font-weight:Bold;
+	text-decoration:None;
+	color:#0000FF;
+}
+div.h3 img{
+	vertical-align:Middle;
+	margin-right:2px;
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h4{
+	margin:20px 10px 5px 10px;
+	font-weight:Bold;
+	font-size:90%;
+	border-Bottom:Solid 1px #87CEEB;
+	background:#FFFFFF;
+	padding:0px 5px;
+	color:#000080;
+}
+div.h4 img{
+	vertical-align:Middle;
+	margin-right:2px;
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h5{
+	margin:20px 10px 5px 15px;
+	font-weight:Bold;
+	font-size:80%;
+	color:#000080;
+}
+div.h5 img{
+	vertical-align:Middle;
+	margin-right:5px;
+	margin-left:4px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h6{
+	margin:15px 10px 5px 30px;
+	font-weight:Bold;
+	font-size:80%;
+	color:#000080;
+}
+div.h6 img{
+	vertical-align:Middle;
+	margin-right:2px;
+	margin-left:0px;
+}
+table div.h6{
+	margin-left:0px;
+	margin-top:10px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text{
+	font-size:80%;
+	margin:5px 10px 5px 30px;
+	color:#000000;
+}
+table div.text{
+	margin:3px 0 0 0;
+}
+div.text img{
+	vertical-align:Middle;
+}
+table div.text img{
+	vertical-align:Middle;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_level1{
+	font-size:80%;
+	margin:5px 10px 5px 40px;
+	color:#000000;
+}
+table div.text_level1{
+	margin:3px 0 0 10px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_level2{
+	font-size:80%;
+	margin:5px 10px 5px 50px;
+	color:#000000;
+}
+table div.text_level2{
+	margin:3px 0 0 20px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_level3{
+	font-size:80%;
+	margin:5px 10px 5px 60px;
+	color:#000000;
+}
+table div.text_level3{
+	margin:3px 0 0 30px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_center{
+	text-align:Center;
+	font-size:80%;
+	color:#000000;
+}
+table div.text_center{
+	margin:3px 0 0 0;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_right{
+	text-align:Right;
+	font-size:80%;
+	color:#000000;
+	margin-right:10px;
+}
+table div.text_right{
+	margin-right:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.annotation{
+	font-size:75%;
+	margin:0px 10px 5px 55px;
+	text-indent:-1.5em;
+	color:#000000;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.list{
+	background:Transparent;
+	_background:Transparent;
+	margin-left:30px;
+	margin-right:10px;
+	margin-top:2px;
+	margin-bottom:2px;
+	padding-left:20px;
+	padding-top:0px;
+	font-weight:Normal;
+	font-size:80%;
+	color:#000000;
+}
+table div.list{
+	margin-left:0px;
+}
+div.list img{
+	vertical-align:Top;
+}
+table div.list img{
+	vertical-align:Top;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+div.dash{
+	margin-left:50px;
+	margin-right:10px;
+	margin-top:2px;
+	margin-bottom:2px;
+	font-weight:Normal;
+	font-size:80%;
+	background:Transparent;
+	_background:Transparent;
+	padding:0px 0px 0px 20px;
+	color:#000000;
+}
+*:first-child+html div.dash{
+	background:Transparent;
+}
+table div.dash{
+	margin-left:12px;
+}
+div.dash img{
+	vertical-align:Top;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.example{
+	font-size:80%;
+	font-family:Monospace;
+	margin:5px 10px 5px 30px;
+	clear:Both;
+	background:#707080;
+	padding:5px;
+	color:#FFFFFF;
+}
+div#id_content div.example a:link{
+	color:#0000FF;
+	text-decoration:None;
+}
+div#id_content div.example a:visited{
+	color:#0000FF;
+	text-decoration:None;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.path{
+	padding:3px 10px 3px 20px;
+	font-size:80%;
+	margin:0px 30px;
+	background:Transparent;
+	_background:Transparent;
+	color:#666666;
+}
+div.path img{
+	vertical-align:Middle;
+}
+table div.path{
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.step_number{
+	background:#F8F8F8;
+	font:Bold 200% "Arial";
+	color:#4682B4;
+	padding:0px 5px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:20px;
+	margin-bottom:0px;
+}
+div.step_number span{
+	font:Bold 100% "Arial";
+	color:#4682B4;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.step_path{
+	padding:3px 10px 3px 30px;
+	font-size:80%;
+	margin:0px 10px;
+	background:#F8F8F8;
+	_background:#F8F8F8;
+	color:#666666;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.step_text{
+	font-weight:Bold;
+	padding:0px 10px 15px 5px;
+	font-size:80%;
+	margin:0px 10px 10px 10px;
+	background:#F8F8F8;
+	color:#000000;
+}
+div.step_text img{
+	vertical-align:Middle;
+}
+@media print{div.step_text{
+	padding:0px 10px 20px 5px;
+}}
+/*-----------------------------------------------------------------------------------------------*/
+div.step_sub{
+	font-size:80%;
+	font-weight:Bold;
+	margin:10px 10px 5px 15px;
+	padding-left:15px;
+	background:Transparent;
+	_background:Transparent;
+	color:#000000;
+}
+div.step_sub img{
+	vertical-align:Top;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.figure{
+	text-align:Left;
+	margin-left:30px;
+	margin-bottom:10px;
+}
+table div.figure{
+	margin-left:0;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.link{
+	margin:10px;
+	font-size:80%;
+	color:#3366A5;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.link a{
+	text-decoration:None;
+	padding-left:10px;
+	background:Transparent;
+	_background:Transparent;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.list_link{
+	background:Transparent;
+	_background:Transparent;
+	margin-left:30px;
+	margin-right:10px;
+	margin-bottom:0px;
+	padding-left:20px;
+	padding-top:1px;
+	font-weight:Normal;
+	font-size:80%;
+	color:#3366A5;
+}
+table div.list_link{
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.link_to_top{
+	text-align:Right;
+	padding:5px 10px 30px 10px;
+	font-size:80%;
+	color:#3366A5;
+	border-top:Dotted 1px #87CEEB;
+	margin-top:30px;
+}
+@media print{div.link_to_top{
+	display:None;
+}}
+div.link_to_top a{
+	text-decoration:None;
+	padding-left:12px;
+	background:Transparent;
+	_background:Transparent;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.trouble_shooting{
+	margin:10px 10px 10px 30px;
+}
+table.trouble_shooting{
+	border-collapse:Collapse;
+	table-layout:Fixed;
+}
+td.trouble_shooting{
+	border:Solid 1px #FFFFFF;
+}
+td.trouble_shooting_col_0{
+	padding:5px;
+	vertical-align:Middle;
+	font-size:100%;
+	width:80px;
+	background:#C0C0C0;
+	padding-bottom:10px;
+}
+td.trouble_shooting_col_1{
+	background:#EFEFEF;
+	padding-top:5px;
+	padding-bottom:10px;
+	padding-left:5px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.outline{
+	margin:10px 10px 10px 30px;
+}
+table.outline{
+	border-collapse:Collapse;
+	font-size:100%;
+}
+td.outline{
+	padding:10px 5px 10px 5px;
+}
+td.outline_col_0{
+	vertical-align:Middle;
+	text-align:Center;
+	border:Solid 1px #87CEEB;
+	background:#F5F5F5;
+	width:30px;
+	font-size:130%;
+}
+td.outline_col_0 div.h6{
+	color:#4682B4;
+	margin:0px;
+}
+td.outline_col_1{
+	vertical-align:Middle;
+	border:Solid 1px #87CEEB;
+	border-left:None;
+	background:#F5F5F5;
+	width:150px;
+}
+td.outline_col_1 div.h6{
+	margin:0px;
+	color:#000000;
+}
+td.outline_col_2{
+	vertical-align:Middle;
+	background:#FFFFFF;
+	border:Solid 1px #87CEEB;
+	padding:3px 3px 3px 10px;
+}
+td.outline_col_2 div.list{
+	background:Transparent;
+	_background:Transparent;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_ui{
+	margin:5px 10px 10px 30px;
+}
+table.table_ui{
+	table-layout:Auto;
+	border-collapse:Collapse;
+	border:None;
+	border-bottom:Solid 1px #E0E0E0;
+}
+td.table_ui_col_0{
+	padding:0px;
+	vertical-align:Top;
+	font-size:100%;
+	width:150px;
+	color:#000000;
+	padding:0px 0px 5px 0px;
+	border-right:None;
+}
+td.table_ui_col_1{
+	background:#FFFFFF;
+	padding:3px;
+	padding-left:10px;
+	border:Solid 1px #E0E0E0;
+	border-left:Solid 1px #E0E0E0;
+	border-right:None;
+	border-bottom:None;
+	vertical-align:Top;
+}
+td.table_ui_col_0 div.ui_level0{
+	background:#FFFFFF;
+	font-size:80%;
+	padding:6px 3px 1px 3px;
+	border-top:Solid 1px #E0E0E0;
+	border-right:None;
+	border-left:Solid 10px #FFFFFF;
+	margin-left:0px;
+}
+td.table_ui_col_0 div.ui_level1{
+	background:#FFFFFF;
+	font-size:80%;
+	padding:6px 3px 10px 3px;
+	border-top:Solid 1px #E0E0E0;
+	border-right:None;
+	border-left:Solid 10px #87BEDB;
+	margin-left:0px;
+}
+td.table_ui_col_0 div.ui_level2{
+	background:#FFFFFF;
+	font-size:80%;
+	padding:6px 3px 10px 3px;
+	margin-left:10px;
+	border-top:Solid 1px #E0E0E0;
+	border-right:None;
+	border-left:Solid 10px #A0D0EA;
+}
+td.table_ui_col_0 div.ui_level3{
+	background:#FFFFFF;
+	font-size:80%;
+	padding:6px 3px 10px 3px;
+	margin-left:20px;
+	border-top:Solid 1px #E0E0E0;
+	border-right:None;
+	border-left:Solid 10px #C6E5F6;
+}
+td.table_ui_col_0 div.ui_level1 img,
+td.table_ui_col_0 div.ui_level2 img,
+td.table_ui_col_0 div.ui_level3 img{
+	vertical-align:Middle;
+}
+/*-----------------------------------------------------------------------------------------------*/
+table div.table_important,
+table div.table_caution,
+table div.table_warning,
+table div.table_note{
+	margin-left:20px;
+}
+div.table_important,
+div.table_caution,
+div.table_warning,
+div.table_note{
+	margin:10px 10px 10px 30px;
+}
+*:first-child+html table.table_important,
+*:first-child+html table.table_caution,
+*:first-child+html table.table_warning,
+*:first-child+html table.table_note{
+	width:Auto;
+	table-layout:Fixed;
+}
+table.table_important,
+table.table_caution,
+table.table_warning,
+table.table_note{
+	background:#FFFFFF;
+	border-collapse:Collapse;
+	font-size:100%;
+	width:100%;
+	_width:Auto;
+	_table-layout:Fixed;
+}
+*:first-child+html table td.table_important_col_0,
+*:first-child+html table td.table_caution_col_0,
+*:first-child+html table td.table_warning_col_0,
+*:first-child+html table td.table_note_col_0{
+	width:Auto;
+}
+table td.table_important_col_0,
+table td.table_caution_col_0,
+table td.table_warning_col_0,
+table td.table_note_col_0{
+	width:100%;
+	_width:Auto;
+	vertical-align:Top;
+}
+*:first-child+html tbody.table_important td.table_important_col_0,
+*:first-child+html tbody.table_caution td.table_caution_col_0,
+*:first-child+html tbody.table_warning td.table_warning_col_0,
+*:first-child+html tbody.table_note td.table_note_col_0{
+	width:Auto;
+}
+tbody.table_important td.table_important_col_0,
+tbody.table_caution td.table_caution_col_0,
+tbody.table_warning td.table_warning_col_0,
+tbody.table_note td.table_note_col_0{
+	padding-left:10px;
+	width:100%;
+	_width:Auto;
+}
+@media print{
+thead.table_important td.table_important,
+thead.table_caution td.table_caution,
+thead.table_warning td.table_warning,
+thead.table_note td.table_note{
+	padding-bottom:5px;
+}}
+tbody.table_important td.table_important,
+tbody.table_caution td.table_caution,
+tbody.table_warning td.table_warning,
+tbody.table_note td.table_note{
+	padding-left:10px;
+	padding-top:2px;
+	border-bottom:None;
+	padding-bottom:5px;
+	border-top:None;
+}
+thead.table_important td.table_important_col_0,
+thead.table_note td.table_note_col_0{
+	padding:2px 5px 2px 30px;
+	text-align:Left;
+	border-bottom:None;
+}
+thead.table_caution td.table_caution_col_0,
+thead.table_warning td.table_warning_col_0{
+	padding:2px 23px 5px 5px;
+	text-align:Center;
+	border-bottom:Solid 1px #808080;
+}
+thead.table_caution td.table_caution_col_0 div img,
+thead.table_warning td.table_warning_col_0 div img{
+	margin-right:3px;
+}
+thead.table_important td.table_important div,
+thead.table_caution td.table_caution div,
+thead.table_warning td.table_warning div,
+thead.table_note td.table_note div{
+	font-weight:Bold;
+}
+table.table_important{
+	border:Solid 1px #808080;
+}
+table.table_caution,
+table.table_warning{
+	border:Solid 1px #808080;
+}
+table.table_note{
+	border:Solid 1px #808080;
+}
+thead.table_important td.table_important{
+	background:Transparent;
+	_background:Transparent;
+}
+thead.table_caution td.table_caution div,
+thead.table_warning td.table_warning div{
+	font-size:120%;
+}
+
+thead.table_note td.table_note{
+	background:Transparent;
+	_background:Transparent;
+}
+thead.table_important td.table_important div{
+	color:#4682B4;
+}
+thead.table_caution td.table_caution div,
+thead.table_warning td.table_warning div{
+	color:#000000;
+}
+thead.table_note td.table_note div{
+	color:#808080;
+}
+thead.table_important td.table_important_col_0,
+tbody.table_important td.table_important_col_0{
+	border-right:Solid 1px #808080;
+}
+thead.table_caution td.table_caution_col_0,
+tbody.table_caution td.table_caution_col_0,
+thead.table_warning td.table_warning_col_0,
+tbody.table_warning td.table_warning_col_0{
+	border-right:Solid 1px #808080;
+}
+thead.table_note td.table_note_col_0,
+tbody.table_note td.table_note_col_0{
+	border-right:Solid 1px #808080;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_no_border{
+	margin:10px 10px 10px 30px;	
+}
+table div.table_no_border{
+	margin-left:10px;
+}
+table.table_no_border{
+	border:None;
+	width:Auto;
+}
+thead.table_no_border td.table_no_border{
+	padding:0px 5px 0px 0px;
+	border:None;
+	font-size:100%;
+	text-align:Left;
+	font-weight:Bold;
+	vertical-align:Middle;
+}
+tbody.table_no_border td.table_no_border{
+	padding:0px 5px 0px 0px;
+	vertical-align:Top;
+	border:None;
+	font-size:100%;
+	padding-bottom:5px;
+}
+tbody.table_no_border td.table_no_border div{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_matrix{
+	margin:10px 10px 10px 30px;
+}
+table div.table_matrix{
+	margin-left:20px;
+}
+table.table_matrix{
+	border-collapse:Collapse;
+	border:Solid 1px #808080;
+}
+thead.table_matrix td.table_matrix{
+	padding:5px;
+	background-color:#DDDDDD;
+	border:Solid 1px #808080;
+	font-size:100%;
+	text-align:Center;
+	font-weight:Normal;
+	vertical-align:Middle;
+}
+tbody.table_matrix td.table_matrix_col_0{
+	padding:5px 0px;
+	padding-left:5px;
+	width:120px;
+	vertical-align:Middle;
+	background-color:#EFEFEF;
+	border:Solid 1px #808080;
+	font-size:100%;
+	font-weight:Normal;
+}
+tbody.table_matrix td.table_matrix{
+	padding:3px 10px;
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+	font-size:100%;
+}
+thead.table_matrix td.table_matrix_col_1{
+	background-color:#DDDDDD;
+	border:Solid 1px #808080;
+	padding:5px;
+}
+tbody.table_matrix td.table_matrix_col_1{
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+}
+thead.table_matrix td.table_matrix_col_0{
+	border:Solid 1px #808080;
+	background-color:#DDDDDD;
+	padding:5px;
+}
+thead.table_matrix td.table_matrix div{
+	color:#000000;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_general{
+	margin:10px 10px 10px 30px;
+}
+table div.table_general{
+	margin-left:20px;
+}
+table.table_general{
+	border-collapse:Collapse;
+	border:Solid 1px #808080;
+}
+thead.table_general td.table_general{
+	padding:5px;
+	border:Solid 1px #808080;
+	font-size:100%;
+	text-align:Center;
+	font-weight:Normal;
+	vertical-align:Middle;
+}
+tbody.table_general td.table_general_col_0{
+	padding:5px 0px;
+	padding-left:5px;
+	width:120px;
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+	font-size:100%;
+	font-weight:Normal;
+}
+tbody.table_general td.table_general{
+	padding:3px 10px;
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+	font-size:100%;
+}
+thead.table_general td.table_general_col_1{
+	border:Solid 1px #808080;
+	padding:5px;
+}
+tbody.table_general td.table_general_col_1{
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+}
+thead.table_general td.table_general_col_0{
+	border:Solid 1px #808080;
+	padding:5px;
+}
+thead.table_general td.table_general div{
+	color:#000000;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_number{
+	margin:10px 10px 10px 35px;	
+}
+table div.table_number{
+	margin-left:25px;
+}
+table.table_number{
+	border-collapse:Collapse;
+	border:None;
+	width:Auto;
+}
+tbody.table_number td.table_number{
+	padding:0px 5px 0px 0px;
+	border:None;
+	font-size:100%;
+	text-align:Left;
+	vertical-align:Top;
+}
+tbody.table_number td.table_number_col_0{
+	width:1.5em;
+	border:None;
+}
+tbody.table_number td.table_number_col_0 div{
+	margin-left:0px;
+	margin-right:0px;
+	font-weight:Normal;
+	text-align:Right;
+}
+tbody.table_number td.table_number_col_1{
+	width:Auto;
+}
+/*-----------------------------------------------------------------------------------------------*/
+span.bold{
+	font-weight:Bold;
+}
+span.italic{
+	font-style:Italic;
+}
+span.no_break{
+	white-space:Nowrap;
+}
+span.superscript{
+	vertical-align:Super;
+	font-size:80%;
+}
+span.subscript{
+	vertical-align:Sub;
+	font-size:80%;
+}
+span.underline{
+	text-decoration:Underline;
+}
+span.color_white{
+	color:#FFFFFF;
+}
+span.color_blue{
+	color:#0000FF;
+}
+span.color_red{
+	color:#FF0000;
+}
+span.color_orange{
+	color:#FFA500;
+}
+span.color_green{
+	color:#008000;
+}
+span.bold\+color_red{
+	color:#FF0000;
+	font-weight:Bold;
+}
+span.bold\+italic{
+	font-style:Italic;
+	font-weight:Bold;
+}
+span.bold\+superscript{
+	vertical-align:Super;
+	font-size:80%;
+	font-weight:Bold;
+}
+span.bold\+underline{
+	text-decoration:Underline;
+	font-weight:Bold;
+}
+span.italic\+superscript{
+	vertical-align:Super;
+	font-size:80%;
+	font-style:Italic;
+}
+span.yenmark{
+	/*font-family:"MS PGothic","Osaka","Arial","Helvetica",Sans-serif;*/
+}
+span.yenmark\+italic{
+	/*font-family:"MS PGothic","Osaka","Arial","Helvetica",Sans-serif;*/
+	font-style:Italic;
+}
+span.bold\+color_orange{
+	color:#FFA500;
+	font-weight:Bold;
+}
+span.bold\+superscript\+color_red{
+	color:#FF0000;
+	vertical-align:Super;
+	font-size:80%;
+	font-weight:Bold;
+}
+span.bold\+superscript\+color_orange{
+	color:#FFA500;
+	vertical-align:Super;
+	font-size:80%;
+	font-weight:Bold;
+}
+span.bold\+no_break{
+	white-space:Nowrap;
+	font-weight:Bold;
+}
+span.bold\+no_break\+superscript{
+	white-space:Nowrap;
+	font-weight:Bold;
+	vertical-align:Super;
+	font-size:80%;
+}
+span.no_break\+superscript{
+	white-space:Nowrap;
+	vertical-align:Super;
+	font-size:80%;
+}
+span.superscript\+color_red{
+	color:#FF0000;
+	vertical-align:Super;
+	font-size:80%;
+}
+span.superscript\+color_orange{
+	color:#FFA500;
+	vertical-align:Super;
+	font-size:80%;
+}
+span.ui_text{
+}
+span.ui_bold{
+	font-weight:Bold;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+div#id_breadcrumbs{
+	font-size:70%;
+	position:Absolute;
+	left:5px;
+	top:10px;
+	z-index:1;
+	cursor:Default;
+	display:None;
+}
+div#id_breadcrumbs a{
+	margin:0px 5px;
+}
+div#id_breadcrumbs a:link{
+	color:#0000FF;
+}
+div#id_breadcrumbs a:visited{
+	color:#0000FF;
+}
+span.style_name{
+	font:Normal 8pt "Tahoma";
+	color:#FF0000;
+	margin:0px 5px;
+}
+div.open_close_all{
+	font-size:80%;
+	margin:5px 10px 5px 30px;
+	color:#3366A5;
+	text-align:Right;
+}
+div.open_close_next_sibling{
+	font-size:80%;
+	margin:5px 10px 5px 30px;
+	color:#3366A5;
+	text-align:Right;
+}
+div#id_content div.open_close_all a:hover,
+div#id_content div.open_close_next_sibling a:hover{
+	text-decoration:None;
+}
+a.open_all:hover,
+a.close_all:hover,
+a.open_next_sibling:hover,
+a.close_next_sibling:hover{
+	border-bottom:Solid 1px #3366A5;
+}
+a.open_all,
+a.close_all,
+a.open_next_sibling,
+a.close_next_sibling{
+	border-bottom:Dotted 1px #3366A5;
+	padding-right:15px;
+}
+a.open_all{
+	margin-right:5px;
+}
+a.open_next_sibling{
+}
+a.close_all,
+a.close_next_sibling{
+}
+div.invisible_begin{
+	color:#FFFFFF;
+	font-size:80%;
+	text-align:Right;
+}
+div.invisible_end{
+	color:#FFFFFF;
+	font-size:80%;
+	text-align:Right;
+}
+div.invisible{
+	display:None;
+	border-right:Dotted 1px #808080;
+	margin-right:10px;
+}
+@media print{
+div.open_close_all{
+	display:None;
+}
+div.open_close_next_sibling{
+	display:None;
+}
+div.invisible{
+	display:Block;
+	border-right:None;
+	margin-right:0px;
+}}
+div.hr{
+	border-top:Solid 2px #808080;
+	margin:25px 10px 0px 10px;
+	font-size:0pt;
+	color:#FFFFFF;
+}
+hr{
+	color:#808080;
+	background-color:#808080;
+	margin:25px 10px 0px 10px;
+	height:2px;
+	border:0;
+}
+/*-----------------------------------------------------------------------------------------------*/
+@supports (-ms-accelerator:true) { @media print {
+	div./*[style]*/list {
+		background: none!important;
+		position: relative;
+	}
+	div./*[style]*/list:before {
+		content: url(style_list.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 4px;
+	}
+	div./*[style]*/dash {
+		background: none!important;
+		position: relative;
+	}
+	div./*[style]*/dash:before {
+		content: url(style_dash.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 4px;
+	}
+	div./*[style]*/path {
+		background: none!important;
+		position: relative;
+	}
+	div./*[style]*/path:before {
+		content: url(style_path.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 1px;
+	}
+	div./*[style]*/step_path {
+		background: #F8F8F8!important;
+		position: relative;
+	}
+	div./*[style]*/step_path:before {
+		content: url(style_path.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 8px;
+	}
+	div./*[style]*/step_sub {
+		background: none!important;
+		position: relative;
+	}
+	div./*[style]*/step_sub:before {
+		content: url(style_step_sub.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 8px;
+	}
+	div./*[style]*/step_sub {
+		background: none!important;
+		position: relative;
+	}
+	div./*[style]*/step_sub:before {
+		content: url(style_step_sub.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 8px;
+	}
+	div./*[style]*/link a {
+		background: none!important;
+		position: relative;
+	}
+	div./*[style]*/link a:before {
+		content: url(style_link.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	div./*[style]*/list_link {
+		background: none!important;
+		position: relative;
+	}
+	div./*[style]*/list_link:before {
+		content: url(style_link.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	thead./*[style]*/table_important td./*[style]*/table_important {
+		background: none!important;
+		position: relative;
+	}
+	thead./*[style]*/table_important td./*[style]*/table_important:before {
+		content: url(style_important.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	thead./*[style]*/table_note td./*[style]*/table_note {
+		background: none!important;
+		position: relative;
+	}
+	thead./*[style]*/table_note td./*[style]*/table_note:before {
+		content: url(style_note.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+}}
+-->
+		</style>
+	</head>
+	<body>
+		<!--CONTENT_START-->
+		<div id="id_content">
+			<div class="h1"><a id="d3209d1e1265edc49d5d94202bdeb6ec"></a>Canon UFR II 打印机驱动程序 版本 30.02 适用于 Microsoft Windows</div>
+			<div class="h2">佳能软件许可协议</div>
+			<div class="h5">重要</div>
+			<div class="text">本文件是您和佳能公司(以下简称“佳能”)之间达成的法律协议(以下简称“协议”)，它将规范您如何使用特定佳能复印机、打印机和多功能外围设备(以下简称“产品”)的软件程序(以下简称“软件”)，包括相关手册或任何印刷品。</div>
+			<div class="text"><span class="bold">在安装本软件之前，请仔细阅读并理解本协议中描述的所有权利和限制。 单击按钮表明您接受以下规定，或安装本软件表明您同意接受本协议中各项条款和条件。 如果您不同意本协议的下述条款和条件，请勿使用本软件。</span></div>
+			<div class="h5">1. 使用许可</div>
+			<div class="text">佳能仅在您直接或通过网络与本产品连接的计算机(以下简称“指定计算机”)上使用(这里所说的“使用”是指存储、装载、安装、访问、运行、显示等)本软件的情况下给予您个人的、有限的而又非独家的使用许可。</div>
+			<div class="text">您可以允许其他计算机的用户通过连接到您的指定计算机使用本软件，但您必须保证所有这些用户都遵守本协议的所有条款，并受到您所承担的下列限制和义务的约束。</div>
+			<div class="text">您仅可以制作一个本软件副本用做备份。</div>
+			<div class="h5">2. 限制</div>
+			<div class="text">除非本协议明确允许或授权，您不得将本软件分派、再许可、出售、出租、租赁、借出、转移或转让给第三方。 您不得将本软件更改、翻译或转换为另一种编程语言；不得对其进行修改、分解、反编译或进行其他反向工程，也不得允许任何第三方实施上述行为。</div>
+			<div class="h5">3. 版权声明</div>
+			<div class="text">您不得修改、移动或删除包含在本软件及其副本中的佳能或其许可者的任何版权声明。</div>
+			<div class="h5">4. 所有权</div>
+			<div class="text">佳能及其许可者拥有本软件中以及本软件相关的全部权利、所有权以及知识产权。 除本协议明确规定外，佳能不会将自己及其许可者的任何知识产权的许可或权利明示或默示地转让或授予给您。</div>
+			<div class="h5">5. 出口管制</div>
+			<div class="text">您同意遵守相关国家或地区的所有出口法律、限制和规定，在有可能违反相关法律、限制和规定或者尚未获得各种必要的批准时，不会直接或间接地出口或者再出口本软件。</div>
+			<div class="h5">6. 支持和更新</div>
+			<div class="text"><span class="bold">佳能、佳能子公司或附属公司、其分销商或经销商以及佳能许可者均不负责维护或帮助您使用本软件、或为本软件提供任何升级、修改或支持。</span></div>
+			<div class="h5">7. 担保和责任的免责声明</div>
+			<div class="text"><span class="bold">[不担保] 本软件是“按其现状”提供，不附带任何形式明示或默示的担保，包括但不限于对特定目的适销性和适用性的默示担保。 本软件质量和性能等方面的所有风险 均由您承担。 若本软件证实确有缺陷，您将承担所有必需的服务、维修或更正的所有费用。 某些国家(地区)或司法体系禁止排除默示保证，因此上述排除可能对您不适用。</span></div>
+			<div class="text"><span class="bold">该保证授予您特定的法律权利，并且由于国家(地区)或司法体系间的差异，您也许还会享有其他权利。</span></div>
+			<div class="text"><span class="bold">佳能、佳能子公司或附属公司、其分销商或经销商以及佳能许可者均不保证本软件的功能符合您的要求，也不保证本软件的运行不会中断或没有错误。</span></div>
+			<div class="text"><span class="bold">[不承担赔偿] 即使已经被告知可能会发生这些损失，佳能、佳能子公司或附属公司、其分销商或经销商以及佳能许可者均不对因本软件、使用本软件或无法使用本软件而引起的任何损失(包括但不限于商业利润损失、商业信息损失、业务中断或其他赔偿性的、偶然或间接的损失等)承担任何责任。 某些国家(地区)或司法体系禁止限制或排除这些由于卖方过失产生的偶然或间接的损害、人身伤亡等的责任，因此上述限制或排除对您可能不适用。</span></div>
+			<div class="text"><span class="bold">[责任免除] 在现行法律允许的范围内，您特此免除佳能、佳能子公司或附属公司、其分销商或经销商以及佳能许可者各方所面临的因本软件或使用本软件引起的所有赔偿责任。</span></div>
+			<div class="h5">8. 期限</div>
+			<div class="text">本协议授予的许可自您单击按钮表明您接受以下规定或安装本软件时起开始生效，并保持有效直至终止。 您可通过销毁本软件及其所有副本终止本协议。</div>
+			<div class="text">如果您不遵守本协议中的任何条款，本协议也将会终止。 本协议终止时，除佳能将行使其相应法定权利外，您必须立即销毁本软件及其所有副本。 尽管如此，本协议第 4、第7至第 11 条在任何本协议终止的情况下将仍然有效。</div>
+			<div class="h5">9. 美国政府限制权利声明</div>
+			<div class="text">“美国政府最终用户”是指美国政府的任何机构或团体。 如果您是美国政府最终用户，则下列内容适用：The SOFTWARE is a &quot;commercial item,&quot; as that term is defined at 48 C.F.R. 2.101 (October 1995), consisting of &quot;commercial computer software&quot; and &quot;commercial computer software documentation,&quot; as such terms are used in 48 C.F.R. 12.212 (September 1995). Consistent with 48 C.F.R. 12.212 and 48 C.F.R. 227.7202-1 through 227.7202-4 (June 1995), all U.S. Government End Users shall acquire the SOFTWARE with only those rights set forth herein. The manufacturer is Canon Inc./30-2, Shimomaruko 3-chome, Ohta-ku, Tokyo 146-8501, Japan.</div>
+			<div class="h5">10. 合同中止</div>
+			<div class="text">如果本协议中的任何条款被任何有管辖权的法院或法庭宣布或查明为非法，则在该法院或法庭的管辖范围内可将该条款视为无效，但所有其他条款仍然有效。</div>
+			<div class="h5">11. 确认</div>
+			<div class="text"><span class="bold">单击按钮表明您接受以下规定，或安装本软件表明您确认已阅读并理解本协议，且同意遵守其各项条款和条件。 您也同意本协议是您和佳能之间关于本软件的完整的、唯一的协议，并取代您和佳能之间已存在的相关所有口头或书面的意向、之前的协议以及任何其他往来信息。 除非由佳能正式授权的代表署名，否则对本协议的任何修改都将视为无效。</span></div>
+			<div class="text">如果您对本协议有任何疑问，或由于其他原因需要联系佳能，请写信给服务于您获得佳能产品所在国家(地区)的佳能子公司或分销商/经销商。</div>
+			<div class="text"> </div>
+			<div class="text">No.I010G016379</div>
+			<hr />
+			<div class="text">README 文件中包括帮助用户如何在Microsoft Windows系统下安装并使用UFR II打印机驱动程序软件的辅助信息。</div>
+			<div class="text">与大多数软件和硬件产品一样，某些信息是在手册制作之后公开的。本 README 文件中提供了关于此驱动程序软件的更新信息。如果需要其他帮助，请与当地的 Canon 公司联系。</div>
+			<div class="text">Microsoft、Windows 和 Windows Vista 是 Microsoft Corporation 在美国和/或其他国家（地区）的注册商标或商标。</div>
+			<div class="text">这里出现的其他产品和公司名称是其各自所有者的商标。</div>
+			<div class="h2"><a id="0c970eb48f6aeb22f5fe56ddcefd64fa"></a>目录</div>
+			<div class="list_link"><a href="#636d58b85e05af14fba26f23ec13e2c6">概述</a></div>
+			<div class="list_link"><a href="#cfbfe503012e612edb9d60eefc68d5af">系统要求</a></div>
+			<div class="list_link"><a href="#510c5684a4a8a792eadfb55bc9744983">UFR II驱动程序支持的Canon产品</a></div>
+			<div class="list_link"><a href="#ff162bfa526082b732442a0925874960">安装打印机驱动程序</a></div>
+			<div class="list_link"><a href="#b6b8cb34c536624321aae23eb2118d27">访问“属性”对话框</a></div>
+			<div class="list_link"><a href="#a9472a69374d08acb201ac44575378ed">访问“帮助”信息</a></div>
+			<div class="list_link"><a href="#74722ef065ccaf1fa5e99bf717f10223">警告、限制和约束</a></div>
+			<div class="list_link"><a href="#4a6bdb2eb8fe4b63a3a88976d8016900">特定打印机型号的限制</a></div>
+			<div class="h4"><a id="636d58b85e05af14fba26f23ec13e2c6"></a>概述</div>
+			<div class="text">该打印机驱动程序允许通过任意Windows 应用程序在您的打印机上打印文档 。</div>
+			<div class="text"><span class="bold">注释</span></div>
+			<div class="list">本驱动程序支持Canon Driver Configuration Tool。您可以使用Canon Driver Configuration Tool来更改打印机驱动程序的出厂默认设置，从而创建自定义的驱动程序集。有关该实用程序的详细信息，请参考Canon Driver Configuration Tool User's Guide。</div>
+			<div class="h4"><a id="cfbfe503012e612edb9d60eefc68d5af"></a>系统要求</div>
+			<div class="text">CanonUFR II打印机驱动程序可以在下列环境中使用：</div>
+			<div class="h5">操作系统</div>
+			<div class="text">Windows Vista</div>
+			<div class="text">Windows 7</div>
+			<div class="text">Windows 8</div>
+			<div class="text">Windows 8.1</div>
+			<div class="text">Windows 10</div>
+			<div class="text">Windows Server 2008</div>
+			<div class="text">Windows Server 2008 R2</div>
+			<div class="text">Windows Server 2012</div>
+			<div class="text">Windows Server 2012 R2</div>
+			<div class="h5">基于服务器的计算环境</div>
+			<div class="h6">服务器操作系统</div>
+			<div class="text">Windows Server 2008</div>
+			<div class="text">Windows Server 2008 R2</div>
+			<div class="text">Windows Server 2012</div>
+			<div class="text">Windows Server 2012 R2</div>
+			<div class="h6">服务器组件</div>
+			<div class="text">Citrix Presentation Server 4.5</div>
+			<div class="text">Citrix XenApp 5.0</div>
+			<div class="text">Citrix XenApp 6.0</div>
+			<div class="text">Citrix XenApp 6.5</div>
+			<div class="text">Citrix XenApp 7.5</div>
+			<div class="text">Citrix XenApp 7.6</div>
+			<div class="text">Citrix XenApp 7.7</div>
+			<div class="text">Citrix XenApp 7.8</div>
+			<div class="text">Citrix XenDesktop 4.0</div>
+			<div class="text">Citrix XenDesktop 5.0</div>
+			<div class="text">Citrix XenDesktop 5.5</div>
+			<div class="text">Citrix XenDesktop 5.6</div>
+			<div class="text">Citrix XenDesktop 7.0</div>
+			<div class="text">Citrix XenDesktop 7.1</div>
+			<div class="text">Citrix XenDesktop 7.5</div>
+			<div class="text">Citrix XenDesktop 7.6</div>
+			<div class="text">Citrix XenDesktop 7.7</div>
+			<div class="text">Citrix XenDesktop 7.8</div>
+			<div class="text">VMware vSphere 4</div>
+			<div class="text">VMware vSphere 5</div>
+			<div class="text">VMware vSphere 5.1</div>
+			<div class="text">VMware vSphere 5.5</div>
+			<div class="text">VMware vSphere 6.0</div>
+			<div class="text">Microsoft Application Virtualization (App-V)</div>
+			<div class="text">Remote Desktop Service on Windows Server 2012 R2</div>
+			<div class="text">TS-RemoteApp on Windows Server 2008</div>
+			<div class="h6">集群服务器</div>
+			<div class="text">Microsoft Windows Server 2008 Enterprise/Datacenter Edition</div>
+			<div class="text">Microsoft Windows Server 2008 R2 Enterprise/Datacenter Edition</div>
+			<div class="text">Microsoft Windows Server 2012</div>
+			<div class="text">Microsoft Windows Server 2012 R2</div>
+			<div class="h5"><a id="46736b31e3ec30e521e36b46c58fa250"></a>计算机</div>
+			<div class="text">任何正确运行上述操作系统软件的计算机。</div>
+			<div class="text">但是，至少需要下列某个输出端口：</div>
+			<div class="text_level1">- 网络接口</div>
+			<div class="text_level1">- USB端口</div>
+			<div class="text">建议使用网络接口以获得最高品质的打印输出。</div>
+			<div class="h4"><a id="510c5684a4a8a792eadfb55bc9744983"></a>UFR II驱动程序支持的Canon产品</div>
+			<div class="text">下列Canon产品可使用该UFR II打印机驱动程序。参考以下列表，选择与打印机对应的驱动程序名称。</div>
+			<div class="text"><span class="bold">须知</span></div>
+			<div class="text_level2">(**) 打印机型号后带星号 (**) 的驱动程序安装步骤与其他驱动程序不同。有关详情，请参阅“<a href="#ff162bfa526082b732442a0925874960">安装打印机驱动程序</a>”。</div>
+			<div class="h5">Canon D1500 Series UFR II **</div>
+			<div class="text">D1500 Series</div>
+			<div class="h5">Canon D570 UFRII LT **</div>
+			<div class="text">D570</div>
+			<div class="h5">Canon iR-ADV C250/350 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C250/C250i/C250iF/C350/C350i/C350iF/C350P</div>
+			<div class="h5">Canon iR-ADV C351 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C351iF</div>
+			<div class="h5">Canon iR-ADV C2020/2030 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C2020/C2020H/C2030/C2030H</div>
+			<div class="h5">Canon iR-ADV C2025 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C2025H</div>
+			<div class="h5">Canon iR-ADV C2020i/2030i UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C2020i/C2030i</div>
+			<div class="h5">Canon iR-ADV C2020L/2030L UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C2020L/C2030L</div>
+			<div class="h5">Canon iR-ADV C2220/2230 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C2220/C2220i/C2220L/C2230/C2230i</div>
+			<div class="h5">Canon iR-ADV C2225 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C2225/C2225i</div>
+			<div class="h5">Canon iR-ADV C3320 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C3320/C3320i</div>
+			<div class="h5">Canon iR-ADV C3320L UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C3320L</div>
+			<div class="h5">Canon iR-ADV C3325/3330 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C3325/C3325i/C3330/C3330i</div>
+			<div class="h5">Canon iR-ADV C3520 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C3520/C3520i</div>
+			<div class="h5">Canon iR-ADV C3525/3530 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C3525/C3525i/C3530/C3530i</div>
+			<div class="h5">Canon iR-ADV C5030/5035 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C5030/C5030i/C5035/C5035i</div>
+			<div class="h5">Canon iR-ADV C5045/5051 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C5045/C5045i/C5051/C5051i</div>
+			<div class="h5">Canon iR-ADV C5235/5240 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C5235/C5235i/C5240/C5240i</div>
+			<div class="h5">Canon iR-ADV C5250/5255 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C5250/C5250i/C5255/C5255i</div>
+			<div class="h5">Canon iR-ADV C5535/5540 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C5535/C5535i/C5540/C5540i</div>
+			<div class="h5">Canon iR-ADV C5550/5560 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C5550/C5550i/C5560/C5560i</div>
+			<div class="h5">Canon iR-ADV C7055/7065 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C7055/C7065</div>
+			<div class="h5">Canon iR-ADV C7260/7270 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C7260/C7260i/C7270/C7270i</div>
+			<div class="h5">Canon iR-ADV C7280 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C7280i</div>
+			<div class="h5">Canon iR-ADV C7565 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C7565i</div>
+			<div class="h5">Canon iR-ADV C7580/7570 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C7570/C7570i/C7580/C7580i</div>
+			<div class="h5">Canon iR-ADV C9060/9070 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C9060 PRO/C9070 PRO</div>
+			<div class="h5">Canon iR-ADV C9065/9075 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C9065 PRO/C9075 PRO</div>
+			<div class="h5">Canon iR-ADV C9270/9280 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE C9270 PRO/C9280 PRO</div>
+			<div class="h5">Canon iR-ADV 400/500 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 400/400i/400iF/500/500i/500iF</div>
+			<div class="h5">Canon iR-ADV 4025/4035 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 4025/4025A/4025i/4035/4035A/4035i</div>
+			<div class="h5">Canon iR-ADV 4045/4051 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 4045/4045A/4045i/4051/4051A/4051i</div>
+			<div class="h5">Canon iR-ADV 4225/4235 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 4225/4225A/4225i/4235/4235A/4235i</div>
+			<div class="h5">Canon iR-ADV 4245/4251 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 4245/4245A/4245i/4251/4251A/4251i</div>
+			<div class="h5">Canon iR-ADV 4525/4535 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 4525/4525i/4535/4535i</div>
+			<div class="h5">Canon iR-ADV 4545/4551 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 4545/4545i/4551/4551i</div>
+			<div class="h5">Canon iR-ADV 6055/6065 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 6055/6055i/6065/6065i</div>
+			<div class="h5">Canon iR-ADV 6075 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 6075/6075i</div>
+			<div class="h5">Canon iR-ADV 6255/6265 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 6255/6255i/6265/6265i</div>
+			<div class="h5">Canon iR-ADV 6275 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 6275/6275i</div>
+			<div class="h5">Canon iR-ADV 6555/6565 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 6555/6555i/6565/6565i</div>
+			<div class="h5">Canon iR-ADV 6575 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 6575/6575i</div>
+			<div class="h5">Canon iR-ADV 8085/8095 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 8085/8095</div>
+			<div class="h5">Canon iR-ADV 8105 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 8105/8105 PRO</div>
+			<div class="h5">Canon iR-ADV 8205 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 8205/8205 PRO</div>
+			<div class="h5">Canon iR-ADV 8285/8295 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 8285/8285 PRO/8295/8295 PRO</div>
+			<div class="h5">Canon iR-ADV 8505 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 8505</div>
+			<div class="h5">Canon iR-ADV 8585/8595 UFR II</div>
+			<div class="text">imageRUNNER ADVANCE 8585/8595</div>
+			<div class="h5">Canon iR1133 UFRII LT</div>
+			<div class="text">imageRUNNER 1133/1133A/1133iF</div>
+			<div class="h5">Canon iR1435 UFRII LT</div>
+			<div class="text">imageRUNNER 1435/1435i/1435iF/1435P</div>
+			<div class="h5">Canon iR1730/1740/1750 UFRII LT</div>
+			<div class="text">imageRUNNER 1730/1730i/1730iF/1740/1740i/1740iF/1750/1750i/1750iF</div>
+			<div class="h5">Canon iR2002/2202 UFRII LT</div>
+			<div class="text">imageRUNNER 2002/2002L/2002G/2002N/2202/2202L/2202N/2202DN</div>
+			<div class="h5">Canon iR2004/2204 UFRII LT **</div>
+			<div class="text">imageRUNNER 2004 Series/2204 Series</div>
+			<div class="h5">Canon iR2318/2320 UFRII LT</div>
+			<div class="text">iR2318L</div>
+			<div class="text">imageRUNNER 2320L/2320N</div>
+			<div class="h5">Canon iR2420 UFRII LT</div>
+			<div class="text">imageRUNNER 2420D/2420L/2420P</div>
+			<div class="h5">Canon iR2422 UFRII LT</div>
+			<div class="text">imageRUNNER 2422D/2422J/2422L/2422N</div>
+			<div class="h5">Canon iR2520 UFRII LT</div>
+			<div class="text">imageRUNNER 2520/2520i</div>
+			<div class="h5">Canon iR2525/2530 UFRII LT</div>
+			<div class="text">imageRUNNER 2525/2525i/2530/2530i</div>
+			<div class="h5">Canon iR2535/2545 UFRII LT</div>
+			<div class="text">imageRUNNER 2535/2535i/2545/2545i</div>
+			<div class="h5">Canon iR C1028/1030 UFRII LT</div>
+			<div class="text">imageRUNNER C1028/C1028i/C1028iF/C1030/C1030iF</div>
+			<div class="h5">Canon iR C1225 UFR II</div>
+			<div class="text">imageRUNNER C1225/C1225iF</div>
+			<div class="h5">Canon iR C1325/1335 UFR II</div>
+			<div class="text">imageRUNNER C1325/C1325iF/C1335iF</div>
+			<div class="text">imageRUNNER C1335iFC **</div>
+			<div class="h5">Canon iR C3000 Series UFR II **</div>
+			<div class="text">imageRUNNER C3020/C3025/C3025i</div>
+			<div class="h5">Canon iPR C600 UFR II</div>
+			<div class="text">imagePRESS C600/C600i</div>
+			<div class="h5">Canon iPR C650 UFR II</div>
+			<div class="text">imagePRESS C650/C650i</div>
+			<div class="h5">Canon iPR C700/800 UFR II</div>
+			<div class="text">imagePRESS C700/C800</div>
+			<div class="h5">Canon iPR C750/850 UFR II</div>
+			<div class="text">imagePRESS C750/C850</div>
+			<div class="h5">Canon iPR C6010 UFR II</div>
+			<div class="text">imagePRESS C6010/C6011</div>
+			<div class="h5">Canon iPR C6010VP UFR II</div>
+			<div class="text">imagePRESS C6010VP/C6011VP</div>
+			<div class="h5">Canon iPR C7010VP UFR II</div>
+			<div class="text">imagePRESS C7010VP/C7011VP</div>
+			<div class="h5">Canon LBP251 UFR II</div>
+			<div class="text">LBP251dw</div>
+			<div class="h5">Canon LBP252 UFR II</div>
+			<div class="text">LBP252dw</div>
+			<div class="h5">Canon LBP253 UFR II</div>
+			<div class="text">LBP253dw/253x</div>
+			<div class="h5">Canon LBP351/352 UFR II</div>
+			<div class="text">LBP351dn/351x/352dn/352x</div>
+			<div class="h5">Canon LBP710C UFR II</div>
+			<div class="text">LBP710Cx</div>
+			<div class="h5">Canon LBP712C UFR II</div>
+			<div class="text">LBP712Cdn/712Cx</div>
+			<div class="h5">Canon LBP843C/841C UFR II</div>
+			<div class="text">LBP841Cdn/843Cx</div>
+			<div class="h5">Canon LBP6650/3470 UFR II</div>
+			<div class="text">LBP3470/6650/6650dn</div>
+			<div class="h5">Canon LBP6670 UFR II</div>
+			<div class="text">LBP6670dn</div>
+			<div class="h5">Canon LBP6680/3480 UFR II</div>
+			<div class="text">LBP3480/6680x</div>
+			<div class="h5">Canon LBP6750/3560 UFR II</div>
+			<div class="text">LBP3560/6750</div>
+			<div class="h5">Canon LBP6780/3580 UFR II</div>
+			<div class="text">LBP3580/6780dn/6780x</div>
+			<div class="h5">Canon LBP7660C UFR II</div>
+			<div class="text">LBP7660Cdn</div>
+			<div class="h5">Canon LBP7680C/5280 UFR II</div>
+			<div class="text">LBP5280/7680Cx</div>
+			<div class="h5">Canon LBP7780C/5480 UFR II</div>
+			<div class="text">LBP5480/7780C</div>
+			<div class="h5">Canon LBP8750 UFR II</div>
+			<div class="text">LBP8750n</div>
+			<div class="h5">Canon LBP8780 UFR II</div>
+			<div class="text">LBP8780x</div>
+			<div class="h5">Canon MF230 Series UFRII LT **</div>
+			<div class="text">MF230 Series</div>
+			<div class="h5">Canon MF240 Series UFRII LT **</div>
+			<div class="text">MF240 Series</div>
+			<div class="h5">Canon MF410 Series UFR II **</div>
+			<div class="text">MF410 Series</div>
+			<div class="h5">Canon MF510 Series UFR II **</div>
+			<div class="text">MF510 Series</div>
+			<div class="h5">Canon MF620C Series UFRII LT **</div>
+			<div class="text">MF620C Series</div>
+			<div class="h5">Canon MF720C Series UFRII LT **</div>
+			<div class="text">MF720C Series</div>
+			<div class="h5">Canon MF810/820 UFR II</div>
+			<div class="text">MF810Cdn/820Cdn</div>
+			<div class="h5">Canon MF9200 Series UFRII LT</div>
+			<div class="text">MF9220/9280</div>
+			<div class="h4"><a id="ff162bfa526082b732442a0925874960"></a>安装打印机驱动程序</div>
+			<div class="text">若在Microsoft Windows系统的应用程序软件中使用打印机驱动程序，请采用下列安装步骤。</div>
+			<div class="h6"><a id="2a30113ec12409ecaf1debadd080adee"></a><span class="bold">注释</span></div>
+			<div class="list">安装之前，请以管理员身份登录Windows。</div>
+			<div class="list">如果使用安装程序时显示消息提示您重新启动计算机，请确保重新启动计算机。如果不重新启动计算机，现有驱动程序可能无法正常运行。</div>
+			<div class="list">如果您在Citrix XenApp (Presentation Server)环境中使用打印机自动创建机制，则可能无法使用安装程序正确安装该驱动程序。如果发生这种情况，请重新启动XenApp服务器计算机，并检查打印机文件夹。如果任何现有的打印机图标不再显示，请使用“打印机”文件夹中的“添加打印机向导”，在XenApp Server PC服务器计算机上重新安装相关的打印机驱动程序。<br />然后，在启动安装程序安装该驱动程序之前，请使用“ICA Client Printer Configuration（ICA客户端打印机配置）”实用程序，从所有ICA会话中断开所有客户端打印机的连接。安装驱动程序后，请重新启动“ICA Client Printer Configuration（ICA客户端打印机配置）”实用程序并重新连接打印机。 </div>
+			<div class="list">建议您使用安装程序进行升级或添加打印机驱动程序。如果您使用“添加打印机向导”安装新的打印机驱动程序，则必须单击打印机属性对话框的“新驱动程序”按钮，来升级所有现有的打印机驱动程序。</div>
+			<div class="list">如果将SMB(NetBIOS 网络) 打印机作为服务器计算机上的共享打印机，则在安装打印机驱动程序时请使用“添加打印机向导”，并选择“网络打印机”。</div>
+			<div class="list">有关“<a href="#510c5684a4a8a792eadfb55bc9744983">UFR II驱动程序支持的Canon产品</a>”中打印机型号名称后带**的驱动程序安装步骤的详细信息，请参阅“MF 驱动程序安装指南”。</div>
+			<div class="h5"><a id="6651e2a85f87a56b7c2604df4c48b1fa"></a>使用安装程序进行安装：</div>
+			<div class="text">1. 启动安装程序。</div>
+			<div class="text_level1">双击相应文件夹中的“Setup.exe”文件。</div>
+			<div class="text">2. 屏幕上将显示安装向导和用户许可证协议。请确认用户许可证协议的内容，然后单击“是”。 </div>
+			<div class="text">3. 选择“自定义”，然后单击“下一步”按钮。 </div>
+			<div class="text">4. 如果显示对话框，要求选择如何执行安装，请选择“添加新打印机”，或“添加新打印机并更新现有打印机驱动程序”，然后单击“下一步”按钮。 </div>
+			<div class="text">5. 从“打印机列表”中勾选要安装的驱动程序，然后单击“下一步”按钮。 </div>
+			<div class="text">6. 从下拉菜单中选择一个“端口”或单击“添加端口”按钮，然后单击“下一步”按钮。</div>
+			<div class="text_level1">如要将打印机用作默认打印机，请选择“设置为默认值”。</div>
+			<div class="annotation">* 要在Windows 10中启用上述设置，请检查以下设置是否已经在Windows中禁用。</div>
+			<div class="dash">[设置] - [设备] - [打印机和扫描仪] - [让Windows管理默认打印机]</div>
+			<div class="text">7. 在下一个对话框中，检查安装设置，然后单击“开始”按钮。 </div>
+			<div class="text">8. 单击“退出”按钮，完成安装程序。 </div>
+			<div class="text_level1">现在可以从任一Windows应用程序软件中进行打印。 </div>
+			<div class="h6"><a id="ff9115cb2003a1c9edb2ef3aa10b883a"></a><span class="bold">注释</span></div>
+			<div class="list">如果在第5步选择了“添加新打印机”，则可以在不影响现有驱动程序的情况下添加新的驱动程序。如果您选择了“添加新打印机并更新现有打印机驱动程序”，则添加新的驱动程序时，所有现有的驱动程序都将自动更新。</div>
+			<div class="list">如果您正在使用“打印服务器”（指向和打印）环境中的共享打印机，为了自动设置打印机配置、使用“部门 ID 管理”或“用户验证”功能，必须在服务器计算机中安装Canon Driver Information Assist Service。</div>
+			<div class="list">如果您正在使用配备了 Windows 防火墙的操作系统，在安装过程中将会显示一条消息，询问您是否要更改 Windows 防火墙设置。</div>
+			<div class="dash">如果选择“是”，Windows 防火墙将被配置为不阻止Canon Driver Information Assist Service的连接，这样您就可以自动设置打印机配置、使用“部门 ID 管理”或“用户验证”功能。</div>
+			<div class="dash">如果选择“否”，则不能使用Canon Driver Information Assist Service。 </div>
+			<div class="h5"><a id="458c0fbe1c62532bfa546e541b069a2e"></a>使用“添加打印机向导”进行安装：</div>
+			<div class="text">1. 显示“打印机”文件夹。</div>
+			<div class="dash">如果使用的是 Windows Vista/Server 2008，请单击“开始”菜单中的“控制面板”，然后单击“打印机”。</div>
+			<div class="dash">如果使用的是 Windows 7/Server 2008 R2，请单击“开始”菜单中的“设备和打印机”。</div>
+			<div class="dash">如果使用 Windows 8/8.1/Server 2012/2012 R2，打开桌面，在屏幕的右侧显示标识条，单击或按下“设置”、“控制面板”、“设备和打印机”。</div>
+			<div class="dash">如果使用的是 Windows 10，打开“设置”-“设备”-“打印机和扫描仪”。</div>
+			<div class="text">2. 在“打印机”文件夹中，双击“添加打印机”图标或单击“添加打印机”开始执行“添加打印机向导”。 </div>
+			<div class="dash">如果使用的是 Windows 10，单击“添加打印机或扫描仪”→ 显示搜索结果后单击“我所需的打印机未列出”。</div>
+			<div class="text">3. 确认启动“向导”，然后单击“下一步”按钮。 </div>
+			<div class="text">4. 按照屏幕上的指导说明继续安装。 </div>
+			<div class="text">5. 单击“从磁盘安装”按钮。 </div>
+			<div class="text">6. 单击“浏览”按钮，选择“.inf”文件，然后单击“确定”按钮。</div>
+			<div class="text_level2">32位版本：</div>
+			<div class="text_level2">\UFRII\simplified_chinese\32BIT\Driver</div>
+			<div class="text_level2">64位版本：</div>
+			<div class="text_level2">\UFRII\simplified_chinese\x64\Driver</div>
+			<div class="annotation">* 根据您所使用的驱动程序，可能会与上述路径不同。 </div>
+			<div class="text">7. 从“打印机”中选择打印机型号，然后单击“下一步”按钮。 </div>
+			<div class="text">8. 按照屏幕上的说明继续进行安装，然后单击“完成”按钮开始复制文件。 </div>
+			<div class="text_level1">现在可以从任一Windows应用程序软件中进行打印。 </div>
+			<div class="h5"><a id="ae399ab3f7e27290818a8e90a8fa038c"></a>使用 USB 连接进行安装：</div>
+			<div class="text">1. 关闭设备。 </div>
+			<div class="text">2. 启动安装程序 → 按照对话框中的指导说明操作。</div>
+			<div class="text">有关详细信息，请参阅“使用安装程序进行安装”的步骤 1 到 2。 </div>
+			<div class="text">3. 选择“USB 连接”，然后单击 “下一步”按钮。如果显示选择打印机驱动程序的对话框，选择想要安装的驱动程序，并单击“下一步”按钮。</div>
+			<div class="text">4. 若要开始进行安装，单击消息框中的“是”按钮。 </div>
+			<div class="text">5. 当对话框提示时，连接 USB 插头，然后打开打印机的电源。</div>
+			<div class="text_level1">* 如果该屏幕上的安装失败，请尝试执行以下步骤。</div>
+			<div class="dash">通过USB连接时设备未被识别 </div>
+			<div class="text">6.文件复制后，单击“下一步”按钮。 </div>
+			<div class="text">7.单击“退出”按钮，完成安装程序。 </div>
+			<div class="h6"><a id="946b215ddf7d26eb1844ef13168bce61"></a>通过 USB 连接时设备未被识别</div>
+			<div class="text">如果通过 USB 连接时设备未被识别，请尝试执行以下步骤。</div>
+			<div class="text">1. 使用 USB 电缆连接打印机和计算机，然后打开打印机的电源。 </div>
+			<div class="text">2. 显示“设备管理器”。</div>
+			<div class="dash">Windows Vista/Server 2008：选择“控制面板” - “系统和维护” - “设备管理器”。</div>
+			<div class="dash">Windows 7/Server 2008 R2：选择 “控制面板” - “硬件和声音”(或“硬件”) - “设备管理器”。</div>
+			<div class="dash">Windows 8/8.1/Server 2012/2012 R2：打开桌面，在屏幕的右侧显示标识条，单击或按下“设置” - “控制面板” - “硬件和声音” - “设备管理器”。</div>
+			<div class="dash">Windows 10：右键单击Windows图标 - 单击“设备管理器”。</div>
+			<div class="text">3. 在“其他设备”中，右键单击所使用打印机的名称 → 执行“删除”。</div>
+			<div class="text_level1">打印机名称变为</div>
+			<div class="text_level2">“Canon + &lt;型号名称&gt;” </div>
+			<div class="text_level1">完成上述步骤后，重新安装驱动程序。 </div>
+			<div class="text"></div>
+			<div class="h4"><a id="b6b8cb34c536624321aae23eb2118d27"></a>访问“属性”对话框</div>
+			<div class="text">属性对话框包含允许您设置和控制打印机的多个页。要访问属性对话框，请使用下列某个过程：</div>
+			<div class="h6"><a id="8d941cd856e7fe97b977d837c0ab6ec3"></a>从“桌面”进行访问：</div>
+			<div class="text">1. 显示打印机文件夹。</div>
+			<div class="dash">如果使用的是 Windows Vista/Server 2008，请单击“开始”菜单中的“控制面板”，然后单击“打印机”。</div>
+			<div class="dash">如果使用的是 Windows 7/Server 2008 R2，请单击“开始”菜单中的“设备和打印机”。</div>
+			<div class="dash">如果使用 Windows 8/8.1/Server 2012/2012 R2，打开桌面，在屏幕的右侧显示标识条，单击或按下“设置”、“控制面板”、“设备和打印机”。</div>
+			<div class="dash">如果使用的是 Windows 10，单击“设置”-“设备”-“打印机和扫描仪”-“相关设置”-“设备和打印机”。<br /></div>
+			<div class="text">2.在“打印机”文件夹中，右键单击您的打印机图标，然后单击“属性”(Windows Vista/Server 2008)或“打印机属性”(Windows 7/8/8.1/10/Server 2008 R2/2012/2012 R2)，打开“打印机属性”对话框，或者单击“打印首选项”，打开“文档属性”对话框（或“打印首选项”对话框）。 </div>
+			<div class="h6"><a id="6367ad8a20cbc51529545a70e48a29c4"></a>从应用程序中进行访问：</div>
+			<div class="text">1. 单击“打印”命令，显示“打印”对话框。 </div>
+			<div class="text">2. 从下拉列表框中选择您的打印机名称，然后单击“属性”按钮。 </div>
+			<div class="h4"><a id="a9472a69374d08acb201ac44575378ed"></a>访问“帮助”信息</div>
+			<div class="text">通过属性对话框，您可以单击“帮助”按钮以显示有关打印机驱动程序的信息。</div>
+			<div class="h4"><a id="74722ef065ccaf1fa5e99bf717f10223"></a>警告、限制和约束</div>
+			<div class="list">如果您通过应用程序将奇数页数的文档打印为双面文档，则应用程序可能会自动插入空白页以将页数增加为偶数。当发生这种情形时，应用程序插入的空白页将以打印页的计数方式来计算。 </div>
+			<div class="list">为了注册您要使用的自定义纸张尺寸，请通过管理员权限打开“打印机”文件夹中的“文档属性”对话框，然后单击“页面设置”页中的“自定义纸张尺寸”按钮以显示“自定义纸张尺寸设置”对话框，然后在其中指定纸张尺寸。 </div>
+			<div class="list">如果您使用 USB 連線的印表機列印，並從您的電腦取消目前正在進行多工緩衡處理列印的列印工作，印表機可能不會回復到準備就緒狀態。<br />在這種狀態下，您可以透過 USB 列印，但不能透過網路列印。為了能透過網路列印，請在列印之前從印表機控制台中取消列印工作。 </div>
+			<div class="list">如果您的Windows Server操作系统使用的是Server Core，则您将无法使用打印机驱动程序的安装程序。请使用操作系统的安装功能安装打印机驱动程序。</div>
+			<div class="dash">不能使用安装程序安装驱动程序。请使用 Windows 的安装选项。</div>
+			<div class="dash">某些打印选项在本地环境或 Windows 远程桌面环境下不可用。 </div>
+			<div class="list">如果您使用的是支持双面打印的打印机，则默认设置为双面打印。 </div>
+			<div class="list">如果未安装打印机驱动程序（或传真机驱动程序）和 USB 兼容的扫描仪驱动程序，则会将使用 USB 连接的设备识别为新硬件，而且即使出现以下情形，也不会影响驱动程序运行。</div>
+			<div class="dash">Windows Vista：每次使用 USB 连接设备时都会出现一个对话框。</div>
+			<div class="dash">Windows 7/8/8.1/10：“设备和打印机”文件夹中的相关打印机处于警告状态。</div>
+			<div class="text_level2">在这些情形中，驱动程序仍然可以运行。为避免出现这些情形，请安装 USB 兼容的扫描仪驱动程序(Color Network ScanGear 2 USB)。有关如何安装扫描仪驱动程序的指导说明，请参阅驱动程序随附的 readme 文件。 </div>
+			<div class="list">如果在基于服务器的计算环境下使用该打印机驱动程序，则无法在客户端计算机上使用不支持的操作系统来使用该打印机驱动程序。</div>
+			<div class="text"></div>
+			<div class="list">在 USB/WSD 连接环境中使用驱动器时，无法使用“获取设备状态”功能、“部门 ID 管理”功能和“用户验证”功能。</div>
+			<div class="h4"><a id="4a6bdb2eb8fe4b63a3a88976d8016900"></a>特定打印机型号的限制</div>
+			<div class="list">使用支持标题页打印的打印机型号时，如果使用保密打印、存储、保留、重叠打印、胶装联动、鞍式装订或 C 形折叠打印，或者取消选择“硬盘已安装”，将不会打印标题页。 </div>
+			<div class="list">如果使用imageRUNNER ADVANCE 8085/8095/8105，且安装了分页装订处理器-F1或手册分页装订处理器-F1，则无法输出明信片或自定义纸张尺寸（148,0至181,9 mm的高度）。</div>
+			<div class="list">在某些情况下，可以使用驱动程序和打印机可以打印的纸张尺寸来指定的自定义纸张尺寸范围是不同的。关于打印机可以打印的自定义纸张尺寸的信息，请参照打印机附带的手册。</div>
+			<div class="list">使用iR-ADV C2020/2030、C2020i/2030i、C2020L/2030L或C2025时，如果在“质量”页的“高级设置”对话框中将“分辨率”设置为“1200 dpi” ，则会应用以下限制：</div>
+			<div class="dash">仅可以将“完成方式”页中的“装订位置”设置为 A4 页的长边。</div>
+			<div class="dash">无法使用“完成方式”页中的“旋转”和“将不同尺寸/方向的纸张混合打印”设置。</div>
+			<div class="dash">根据所使用的打印机的功能版本，可能无法使用“完成方式”页的“高级设置”对话框中的“复制集编号”设置。 </div>
+			<div class="list">使用iR-ADV C2020L/2030L或没有安装可选硬盘驱动器的iR-ADV C2020/2030时，无法使用下列功能：</div>
+			<div class="dash">[保密打印]</div>
+			<div class="dash">[优先打印] </div>
+			<div class="list">在部分机型中，如果在打印机中存储保密打印作业，可能无法打印其他打印作业。如果发生这种情况，请输出保密打印作业。如果仍无法打印其他打印作业，请从计算机中重新打印。</div>
+			<div class="list">如果您已经安装了低于 20.25 版本的打印机驱动程序（与下列某种打印机型号配合使用），并执行了该打印机驱动程序的更新安装，则在打印机属性对话框的“端口”选项卡中，系统不会选中“启用双向支持”。这可能会导致后台打印程序的取消作业不能正确运行。如果出现这种情况，请选择“启用双向支持”以启用双向支持。</div>
+			<div class="dash">iR2318/2320、2420、iR2520、iR2525/2530以及iR2535/2545</div>
+			<div class="text"></div>
+			<hr />
+			<div class="text_right">Copyright Canon Inc. 2003</div>
+			<div class="text"></div>
+		</div>
+		<!--CONTENT_END-->
+	</body>
+</html>
