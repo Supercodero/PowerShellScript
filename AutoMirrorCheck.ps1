@@ -26,7 +26,7 @@
 ##LNzLEpGeC3fMu77Ro2k3hQ==
 ##L97HB5mLAnfMu77Ro2k3hQ==
 ##P8HPCZWEGmaZ7/K1
-##L8/UAdDXTlGDjqXa8T9k9UrtR1QbYdKeq4WvwY2wzOn+sjXNdbsBXVtanzvuC1meUfcRXqVG5YdfUAUvTw==
+##L8/UAdDXTlGDjqXa8T9k9UrtR1QbYdKeq4WvwY2wzOn+sjXNdZ8MTGhWgz3zKUKvS/0Adv0Qt9pBAE18YfcT59I=
 ##Kc/BRM3KXxU=
 ##
 ##
@@ -101,3 +101,39 @@ if($cloudbase_regit.count -eq 0){
     "8.Error：cloudbase下注册表有残余项，请删除。" | Out-File .\chek_result.log -NoClobber -Append;
     $cloudbase_regit | Out-File .\chek_result.log -NoClobber -Append;
 }
+
+# 快速访问下残留文件
+$items = Get-ChildItem $env:appdata\Microsoft\Windows\Recent
+if($items.Count -eq 0){
+    "9. 快速访问下无残余文件" | Out-File .\chek_result.log -NoClobber -Append
+}else{
+    "9.Error： 快速访问下的残余文件如下，请尽快处理。" | Out-File .\chek_result.log -NoClobber -Append;
+    $items | Out-File .\chek_result.log -NoClobber -Append
+}
+
+# 用户文件夹中是否有残留文件
+"10. 用户文件中的残留文件如下：" | Out-File .\chek_result.log -NoClobber -Append
+"文档：" | Out-File .\chek_result.log -NoClobber -Append
+(Get-ChildItem $env:USERPROFILE\Documents).Name | Out-File .\chek_result.log -NoClobber -Append;
+"下载：" | Out-File .\chek_result.log -NoClobber -Append
+(Get-ChildItem $env:USERPROFILE\Downloads).Name | Out-File .\chek_result.log -NoClobber -Append;
+"图片：" | Out-File .\chek_result.log -NoClobber -Append
+(Get-ChildItem $env:USERPROFILE\Pictures).Name | Out-File .\chek_result.log -NoClobber -Append;
+"音乐：" | Out-File .\chek_result.log -NoClobber -Append
+(Get-ChildItem $env:USERPROFILE\Music).Name | Out-File .\chek_result.log -NoClobber -Append;
+"视频：" | Out-File .\chek_result.log -NoClobber -Append
+(Get-ChildItem $env:USERPROFILE\Videos).Name | Out-File .\chek_result.log -NoClobber -Append;
+
+# tob镜像，检查注册表项
+try {
+   $tobvalue = Get-ItemPropertyValue -Path hklm:\SOFTWARE\ecloudsoft\Mirror -Name User
+   if($tobvalue -eq 1){
+        "11. 注册表中hklm:\SOFTWARE\ecloudsoft\Mirror User值为$tobvalue, 如果为toc镜像则报错，tob镜像请忽略。"| Out-File .\chek_result.log -NoClobber -Append;
+   }elif($tobvalue -eq 2){
+        "11. 注册表中hklm:\SOFTWARE\ecloudsoft\Mirror User值为$tobvalue, 如果为tob镜像则报错，toc镜像请忽略。"| Out-File .\chek_result.log -NoClobber -Append;
+   }
+}
+catch {
+    "11. 找不到注册表中hklm:\SOFTWARE\ecloudsoft\Mirror，User的值, 如果为tob镜像则报错，toc镜像请忽略。"| Out-File .\chek_result.log -NoClobber -Append;
+}
+
